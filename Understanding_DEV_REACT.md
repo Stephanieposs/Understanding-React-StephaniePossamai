@@ -10,12 +10,17 @@
     4. git add [nome do arquivo] -> adiciona um arquivo
     5. git commit -m "comentário" -> commita os arquivos, coloca no repositório remoto
 
-*Após alterações nos arquivos locais:*
+*Após alterações nos arquivos locais:* 
 - git status -> irá aparecer que tem mudanças 
 - git add -> adiciona os arquivos pro staged 
 - git commit -m "comentario" -> atualiza os arquivos no gitHub
 - git push -u origin master
+obs. o VS Code tem o terminal que pode ser usado como o cmd
 
+*Quando o projeto é alterado no gitHub:*
+- Primeiro tem que atualizar o repositorio local 
+- git pull
+- Depois o git push ja funciona
 
 
 #### Links:
