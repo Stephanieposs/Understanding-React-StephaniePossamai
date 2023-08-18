@@ -10,7 +10,13 @@
     4. git add [nome do arquivo] -> adiciona um arquivo
     5. git commit -m "comentário" -> commita os arquivos, coloca no repositório remoto
 
-#### Após alterações nos arquivos locais:
+*Após alterações nos arquivos locais:*
 - git status -> irá aparecer que tem mudanças 
 - git add -> adiciona os arquivos pro staged 
 - git commit -m "comentario" -> atualiza os arquivos no gitHub
+- git push -u origin master
+
+
+
+#### Links:
+[Guide Markdown](https://www.markdownguide.org/cheat-sheet/)
