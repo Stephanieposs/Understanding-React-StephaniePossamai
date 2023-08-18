@@ -15,6 +15,7 @@
 - git add -> adiciona os arquivos pro staged 
 - git commit -m "comentario" -> atualiza os arquivos no gitHub
 - git push -u origin master
+
 obs. o VS Code tem o terminal que pode ser usado como o cmd
 
 *Quando o projeto é alterado no gitHub:*
@@ -23,5 +24,14 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
 - Depois o git push ja funciona
 
 
-#### Links:
+*Como tirar print para ajudar nas anotações: windows shift S*
+
+### Links:
 [Guide Markdown](https://www.markdownguide.org/cheat-sheet/)
+
+### HTML
+parte body -> é a parte que se ve
+
+parte head -> não é visivel, é passado parâmetros nesse lugar
+
+**metadados**: dados que descrevem dados
