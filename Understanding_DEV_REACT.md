@@ -30,8 +30,51 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
 [Guide Markdown](https://www.markdownguide.org/cheat-sheet/)
 
 ### HTML
-parte body -> é a parte que se ve
+#### Formatação do html   
+```
+{
+ <!DOCTYPE html> 
+ <html lang="en">
+    <head>
+        parametros 
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial...>
+        <title>Document</title>
+    </head>
 
-parte head -> não é visivel, é passado parâmetros nesse lugar
+    <body>  
+        texto     
+        <h1>Título h1</h1> 
+        <p> paragrafo </p>
+    </body>  
+ </html>  
+}
+```
+```
+{
+    // exemplo de lista
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+}
+```
+```
+{
+    <dt>heading A</dt>
+    <dd>
+        texto A
+    </dd>
+
+    <dt>heading B</dt>
+    <dd>
+        texto B
+    </dd>
+}
+```
+
+html: páginas de internet, layout de documentos e outros layouts específicos  
+parte head -> não é visivel, é passado parâmetros nesse lugar  
+parte body -> é a parte que se ve
 
 **metadados**: dados que descrevem dados
