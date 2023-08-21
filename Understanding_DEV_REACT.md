@@ -28,6 +28,7 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
 
 ### Links:
 [Guide Markdown](https://www.markdownguide.org/cheat-sheet/)
+[Tutorial HTML e outras linguagens](https://www.w3schools.com/html/default.asp)
 
 ### HTML
 #### Formatação do html   
@@ -72,6 +73,22 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
     </dd>
 }
 ```
+Formatações em html
+```
+{
+  <p><b> negrito </></p>   
+  <p><strong>ênfase</strong></p>
+  <p><i>italico</i></p>  
+  <p><em>enfatizado</em></p>  
+  <p><mark>grifado</mark></p>  
+  <p><small>texto menor</small></p>
+  <p><big>texto maior</big></p>
+  <p><del>taxado</del></p>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> 
+  
+}
+```
+
 
 html: páginas de internet, layout de documentos e outros layouts específicos  
 parte head -> não é visivel, é passado parâmetros nesse lugar  
