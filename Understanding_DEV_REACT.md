@@ -1,5 +1,14 @@
 ## Caderno de Anotações Entra21 React
 
+### Sumário
+
+- [Associando o git com o gitHub](#associando-o-git-com-o-github)
+- [HTML](#html)
+  * [Formatação do html](#formata-o-do-html)
+  * [Anotações HTML](#anota-es-html)
+  * [Inserindo links no HTML:](#inserindo-links-no-html)
+- [Links:](#links)
+
 ### Associando o git com o gitHub
 1. Criar o repositório no GitHub
 2. Abrir o cmd no computador na pasta que vai ser guardado 
@@ -25,10 +34,6 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
 
 
 *Como tirar print para ajudar nas anotações: windows shift S*
-
-### Links:
-[Guide Markdown](https://www.markdownguide.org/cheat-sheet/)
-[Tutorial HTML e outras linguagens](https://www.w3schools.com/html/default.asp)
 
 ### HTML
 #### Formatação do html   
@@ -88,10 +93,28 @@ Formatações em html
   
 }
 ```
-
+#### Anotações HTML
 
 html: páginas de internet, layout de documentos e outros layouts específicos  
 parte head -> não é visivel, é passado parâmetros nesse lugar  
 parte body -> é a parte que se ve
 
 **metadados**: dados que descrevem dados
+
+
+#### Inserindo links no HTML:
+
+**alt** -> texto alternativo, aparece quando a imagem da errado e serve para indexar, para o Google entender o que tem no site, ajudando no engajamento.  
+**target** ->    
+blanc (abre o link em outra aba)   
+self (abre no mesmo navegador)  
+**title** -> texto que aoarece quando passa o mouse me cima do link    
+**download** -> baixar a foto do link
+
+            
+
+
+### Links:
+[Guide Markdown](https://www.markdownguide.org/cheat-sheet/)  
+[Tutorial HTML e outras linguagens](https://www.w3schools.com/html/default.asp)
+[Sumário HTML](https://alexandrealvaro.com.br/indice-markdown/)
