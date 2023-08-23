@@ -1,5 +1,10 @@
 ## Caderno de anotações HTML
 
+### Sumário
+
+- [Formatações](#formatação-do-html)
+- [Anotações gerais](#anotações-html)
+
 #### Formatação do html   
 ```
 {
@@ -75,10 +80,11 @@ self (abre no mesmo navegador)
 **title** -> texto que aoarece quando passa o mouse me cima do link    
 **download** -> baixar a foto do link
 
+
 #### Estruturação dentro do body do HTML
 
-Depois essa formatação é arrumada com o Css para ficar tudo no seu lugar
-
+Depois essa formatação é arrumada com o Css para ficar tudo no seu lugar  
+**figcaption** -> colocar creditos na foto, linha peguena embaixo da foto  
 ```
 {
     <body>
