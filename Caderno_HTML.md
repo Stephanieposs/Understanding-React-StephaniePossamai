@@ -18,20 +18,61 @@
  <!DOCTYPE html> 
  <html lang="en">
     <head>
-        parametros 
+        // parametros 
         <meta charset="UFT-8">
-        <meta name="viewport" content="width=device-width, initial...>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0>
         <title>Document</title>
     </head>
 
     <body>  
-        texto     
+        // texto     
         <h1>Título h1</h1> 
         <p> paragrafo </p>
     </body>  
  </html>  
 }
 ```
+```
+{
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+         
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotyflix</title>
+    
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+
+            </section>
+            <section>
+                <h2>FAQ</h2>
+
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+    </html>
+}
+```
+
+
 #### Listas html
 ```
 {
