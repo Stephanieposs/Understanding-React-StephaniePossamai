@@ -2,10 +2,17 @@
 
 ### Sumário
 
-- [Formatações](#formatação-do-html)
+- [Formatação básica](#formatação-básica-do-html-sem-divisões)
+- [Tipos de listas](#listas-html)
+- [Alterações no texto](#mudanças-no-texto-negrito-itálico-etc)
 - [Anotações gerais](#anotações-html)
+- [Inserindo links](#inserindo-links-no-html)
+- [Estruturação](#estruturação-dentro-do-body-do-html)
+- [Em breve...](#tabela-html)
+- [Em breve...](#audio-visual-html)
+- [Em breve...](#css-básico)
 
-#### Formatação do html   
+#### Formatação básica do html sem divisões 
 ```
 {
  <!DOCTYPE html> 
@@ -25,6 +32,7 @@
  </html>  
 }
 ```
+#### Listas html
 ```
 {
     // exemplo de lista
@@ -47,7 +55,7 @@
     </dd>
 }
 ```
-Formatações em html
+#### Mudanças no texto (negrito, itálico, etc) 
 ```
 {
   <p><b> negrito </></p>   
@@ -70,6 +78,7 @@ parte body -> é a parte que se ve
 
 **metadados**: dados que descrevem dados
 
+**id = 'nome'** -> colocar id em algum lugar, por exemplo no footer, para depois poder colcoar como índice e ir direto pra esse local     
 
 #### Inserindo links no HTML:
 
@@ -79,6 +88,7 @@ blanc (abre o link em outra aba)
 self (abre no mesmo navegador)  
 **title** -> texto que aoarece quando passa o mouse me cima do link    
 **download** -> baixar a foto do link
+
 
 
 #### Estruturação dentro do body do HTML
@@ -145,3 +155,14 @@ Depois essa formatação é arrumada com o Css para ficar tudo no seu lugar
 </body>
 }
 ```     
+
+#### Tabela html 
+
+
+
+
+#### Audio visual html
+
+
+
+#### CSS básico
