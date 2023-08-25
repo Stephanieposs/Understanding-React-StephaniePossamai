@@ -7,16 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotyflix</title>
 
+    <style>
+        .linha {
+            border: 10px solid white;
+            display: flex;
+        }
+
+        .coluna1 {
+            border: 10px solid white;
+            width: 30%;
+        }
+
+        .coluna2 {
+            border: 10px solid white;
+            width: 70%;
+        }
+
+        .linha2{
+            border: 10px solid white;
+            display: flex;
+        }
+
+        .linha3{
+            
+            border: 30px solid white;
+        }
+
+        #idfooter{
+            background-color: cadetblue;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <h1>Spotyflix</h1>
-                <h5>Todas as suas múscias preferidas em um só lugar!</h5>
-            </ul>
-        </nav>
+        <div class="linha2">
+
+            <nav>
+                <ul>
+                    <h1>Spotyflix</h1>
+                    <h5>Todas as suas múscias preferidas em um só lugar!</h5>
+                </ul>
+            </nav>
+
+        </div>
+
+
     </header>
     <main>
         <section>
@@ -26,59 +62,97 @@
                 <p>Mr probs </p>
                 <p>Pop internacional 2014 </p>
             </details>
-            <audio controls loop>
-                <source src="assets/02 mr probs - waves.mp3" type="audio/mp3">
-                Seu Navegador não é compatível com a tag Audio
-            </audio>
-            <p>download</p>
+            <div class="linha">
+                <div class="coluna1">
+                    <audio controls loop>
+                        <source src="assets/02 mr probs - waves.mp3" type="audio/mp3">
+                        Seu Navegador não é compatível com a tag Audio
+                    </audio>
+                </div>
+                <div class="coluna2">
+                    <p> <a href="assets/02 mr probs - waves.mp3" download>download</a></p>
+                </div>
+            </div>
+
+
             <!------------ musica 2 ------------>
             <details>
                 <summary>Rude</summary>
                 <p>Magic!</p>
                 <p>Pop internacional 2014 </p>
             </details>
-            <audio controls loop>
-                <source src="assets/01 magic! - rude.mp3" type="audio/mp3">
-                Seu Navegador não é compatível com a tag Audio
-                
-            </audio>
-            <p>download</p>
+            <div class="linha">
+                <div class="coluna1">
+                    <audio controls loop>
+                        <source src="assets/01 magic! - rude.mp3" type="audio/mp3">
+                        Seu Navegador não é compatível com a tag Audio
+                    </audio>
+                </div>
+                <div class="coluna2">
+                    <p> <a href="assets/01 magic! - rude.mp3" download>download</a></p>
+                </div>
+            </div>
             <!------------ musica 3 ------------>
             <details>
                 <summary>Happy</summary>
                 <p>Pharrell Williams</p>
                 <p>Pop internacional 2014</p>
             </details>
-            <audio controls loop>
-                <source src="assets/03 pharrell williams - happy (cdq).mp3" type="audio/mp3">
-                Seu Navegador não é compatível com a tag Audio
-            </audio>
-            <p>download</p>
+
+            <div class="linha">
+                <div class="coluna1">
+                    <audio controls loop>
+                        <source src="assets/03 pharrell williams - happy (cdq).mp3" type="audio/mp3">
+                        Seu Navegador não é compatível com a tag Audio
+                    </audio>
+                </div>
+                <div class="coluna2">
+                    <p> <a href="assets/03 pharrell williams - happy (cdq).mp3" download>download</a></p>
+                </div>
+            </div>
+
             <!------------ musica 4 ------------>
             <details>
                 <summary>Summer</summary>
                 <p>Calvin Harris</p>
                 <p>Pop internacional 2014 </p>
             </details>
-            <audio controls loop>
-                <source src="assets/05 calvin harris summer (audio) - copia.mp3" type="audio/mp3">
-                Seu Navegador não é compatível com a tag Audio
-            </audio>
-            <p>download</p>
+
+            <div class="linha">
+                <div class="coluna1">
+                    <audio controls loop>
+                        <source src="assets/05 calvin harris summer (audio) - copia.mp3" type="audio/mp3">
+                        Seu Navegador não é compatível com a tag Audio
+                    </audio>
+                </div>
+                <div class="coluna2">
+                    <p> <a href="assets/05 calvin harris summer (audio) - copia.mp3" download>download</a></p>
+                </div>
+            </div>
+
+
             <!------------ musica 5 ------------>
             <details>
                 <summary>Am I Wrong</summary>
                 <p>Nico e Vinz</p>
                 <p>Pop internacional 2014</p>
             </details>
-            <audio controls loop>
-                <source src="assets/06 nico & vinz- am i wrong.mp3" type="audio/mp3">
-                Seu Navegador não é compatível com a tag Audio
-            </audio>
-            <p>download</p>
+            <div class="linha">
+                <div class="coluna1">
+                    <audio controls loop>
+                        <source src="assets/06 nico & vinz- am i wrong.mp3" type="audio/mp3">
+                        Seu Navegador não é compatível com a tag Audio
+                    </audio>
+                </div>
+                <div class="coluna2">
+                    <p> <a href="assets/06 nico & vinz- am i wrong.mp3" download>download</a></p>
+                </div>
+            </div>
+
         </section>
         <section>
-            <h2>FAQ</h2>
+            <div class="linha3">
+                <h2>FAQ</h2>
 
             <details>
                 <summary>Porque não posso revender essas múscias?</summary>
@@ -99,10 +173,13 @@
                 <summary>Qual o estilo musical dessas músicas?</summary>
                 <p>Pop</p>
             </details>
+            </div>
+            
+            
         </section>
 
     </main>
-    <footer>
+    <footer id="idfooter">
         <p>Siga-nos no instagram: @Spotyflix</p>
         <p>www.spotyflix.com</p>
     </footer>
