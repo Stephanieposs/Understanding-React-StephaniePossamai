@@ -1,3 +1,5 @@
 # Understanding-React-StephaniePossamai
-Repositório React entra21
+Repositório de cadernos e conteúdos curso React Entra21
+
+[Caderno principal](Understanding_DEV_REACT.md)
 
