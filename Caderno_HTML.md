@@ -209,3 +209,11 @@ Depois essa formatação é arrumada com o Css para ficar tudo no seu lugar
 
 
 #### CSS básico
+
+Transforma o que é linha em coluna:
+```
+{
+    <style>
+    display: flex;
+}
+```
