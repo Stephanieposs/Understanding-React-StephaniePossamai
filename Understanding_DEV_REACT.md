@@ -39,5 +39,6 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
 
 ### Links:
 [Guide Markdown](https://www.markdownguide.org/cheat-sheet/)  
+[Visualização Markdown](https://readme.so/pt/editor)  
 [Tutorial HTML e outras linguagens](https://www.w3schools.com/html/default.asp)  
 [Sumário HTML](https://alexandrealvaro.com.br/indice-markdown/)
