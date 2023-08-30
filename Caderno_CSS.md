@@ -21,10 +21,20 @@ Aonde é colocado os nomes das classes:
     <div class="clDiv1">
 }
 ```
+CSS estilo externo : <link rel="stylesheet" href="style.css">
+
+Aonde se coloca o CSS: Cascateamento: 
+- CSS Padrão Navegador
+- CSS Folhas de estilo interno e externo (interno é quando a gente abre o style com o *,#,etc e externo é um arquivo separado .css)
+- CSS Inline
+
+Sites cores:   [Color Wheel](https://color.adobe.com/pt/create/color-wheel)   
+[ColorPalletes](https://coolors.co/) 
 
 O CSS tem seletores que são colocados no style para encontrar os elementos para estilizar. Existem 5 tipos de seletores: simples, combinadores, de pseudoclasse, de pseudoelementos e de atributos.
 - [Seletores simples](#seletores-simples)  
 - [Seletores combinadores](#seletores-combinadores)
+
 
 ##### Seletores simples
 Selecionam os elementos com base no id, nome, classe, etc. 
