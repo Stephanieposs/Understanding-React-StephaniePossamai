@@ -3,6 +3,7 @@
 ### Sumário
 - [Anotações gerais](#anotações-gerais-css)
 - [CSS Básico](#css-básico)
+- [Comandos para estilizar](#comandos-que-estilizam-a-página-no-css)
 
 #### Anotações gerais CSS
 **Funções:**  Estilizar elementos HTML, controle de layout, animações e transições, pseudoclasses e pseudoelementos, estilos de formulários, transformações e efeitos 2D/3D, controle de impressão
@@ -31,6 +32,8 @@ Aonde se coloca o CSS: Cascateamento:
 Sites cores:   [Color Wheel](https://color.adobe.com/pt/create/color-wheel)   
 [ColorPalletes](https://coolors.co/) 
 
+
+
 O CSS tem seletores que são colocados no style para encontrar os elementos para estilizar. Existem 5 tipos de seletores: simples, combinadores, de pseudoclasse, de pseudoelementos e de atributos.
 - [Seletores simples](#seletores-simples)  
 - [Seletores combinadores](#seletores-combinadores)
@@ -56,10 +59,6 @@ Selecionam os elementos com base no id, nome, classe, etc.
 
         .clDiv1{
             background-color: beige;
-        }
-
-        .clDiv2{
-            height: 40px;
         }
 
         .clSpan1{
@@ -90,12 +89,25 @@ Selecionam os elementos com base no id, nome, classe, etc.
             width: 30%;
         }
 
-        .coluna2{
-            border: 1px solid black;
-            width: 70%;
-        }
     </style>
 }
 ```
 ##### Seletores combinadores
 Seleciona os elementos com base em uma relação específica entre eles
+
+
+#### Comandos que estilizam a página no CSS
+Comandos gerais: 
+- padding -> px -> 
+- margin -> px -> margem 
+- background-color -> cor do background do item selecionado
+- border ->
+  - 
+- width e height -> 
+- display -> 
+
+Comandos de lista: 
+- list-style-type -> muda o pontinho da frente da lista  
+- list-style-image -> coloca uma imagem no lugar dos pontinhos da frente  
+- list-style-position -> muda o local do pontinho ou imagem
+
