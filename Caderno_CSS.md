@@ -10,7 +10,7 @@
 
 
 #### CSS básico
-é colocado <style> dentro do head 
+é colocado "< style>" dentro do "head" 
 
 Aonde é colocado os nomes das classes: 
 ```
@@ -32,7 +32,7 @@ Aonde se coloca o CSS: Cascateamento:
 Sites cores:   [Color Wheel](https://color.adobe.com/pt/create/color-wheel)   
 [ColorPalletes](https://coolors.co/) 
 
-
+landing page -> 
 
 O CSS tem seletores que são colocados no style para encontrar os elementos para estilizar. Existem 5 tipos de seletores: simples, combinadores, de pseudoclasse, de pseudoelementos e de atributos.
 - [Seletores simples](#seletores-simples)  
@@ -102,12 +102,28 @@ Comandos gerais:
 - margin -> px -> margem 
 - background-color -> cor do background do item selecionado
 - border ->
-  - 
+
 - width e height -> 
 - display -> 
+
+Comandos de tabelas:  
+- vertical-align -> alinha o conteudo de um item da tabela centralizado, em cima ou embaixo
+- overflow-y -> configura o scroll da vertical, auto seria o ideal  
+- empty-lines -> limpa o conteudo 
 
 Comandos de lista: 
 - list-style-type -> muda o pontinho da frente da lista  
 - list-style-image -> coloca uma imagem no lugar dos pontinhos da frente  
 - list-style-position -> muda o local do pontinho ou imagem
 
+Comandos de imagem: 
+- opacity: 0.3; 
+- filter: blur(5px); -> borrado 
+- filter: brigthness (3); -> claridade da foto
+- filter: contrast(0.5); -> contraste
+- filter: grayscale(0.2);
+- filter: invert();
+- filter: saturation(2); 
+- filter: sepia(0.5);
+- filter: drop-shadow(rgb);
+- filter: hue-rotate(120deg);
