@@ -29,8 +29,11 @@ Aonde se coloca o CSS: Cascateamento:
 - CSS Folhas de estilo interno e externo (interno é quando a gente abre o style com o *,#,etc e externo é um arquivo separado .css)
 - CSS Inline
 
-Sites cores:   [Color Wheel](https://color.adobe.com/pt/create/color-wheel)   
-[ColorPalletes](https://coolors.co/) 
+Sites cores:   
+[Color Wheel](https://color.adobe.com/pt/create/color-wheel)   
+[ColorPalletes](https://coolors.co/)   
+Sites fontes:  
+[Google Fontes](https://fonts.google.com/) 
 
 landing page -> 
 
@@ -104,7 +107,17 @@ Comandos gerais:
 - border ->
 
 - width e height -> 
-- display -> 
+- display -> block (linha inteira), inline (****)
+- text-align: center -> alinha o texto de uma linha
+- flex-direction: -> column, column-reverse, row, row-reverse
+- justify-content -> flex-end, flex-start, center, space-between, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> alinhamento horizontal, se usa ao mesmo tempo que o display flex
+- align-items -> flex-end, flex-start, center, -> alinhamento vertical
+- align-content -> flex-end, flex-start, center, space-between, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> 
+- flex-wrap -> wrap, nowrap(escapa) -> quebra o conteudo, não deixa escapar  
+- flex-flow -> flex-direcion + flex-wrap 
+- flex-grow
+- flex-shrink
+- flex-
 
 Comandos de tabelas:  
 - vertical-align -> alinha o conteudo de um item da tabela centralizado, em cima ou embaixo

@@ -6,11 +6,24 @@
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LandingJS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <style>
+        /*CSS Reset*/
         body{
             margin: 0px ;
         }
+        
+        /*palheta de cores*/
+        :root{
+            --CorPrincipal: #1729B3; 
+            --CorSecundaria1: #3B52FF; 
+            --CorSecundaria2: #071266;
+            
+        }
+        /*cabeçalho*/
         .navHeader{
             display: flex;
             background-color: darkblue;
@@ -19,20 +32,57 @@
         .logo img{
             width: 75px;
         }
+
+        .menu{
+            width: 100%;
+            margin-right: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
         .menu ul{
             display: flex;
             list-style-type: none;
+
+            justify-content: flex-end;
+            align-items: center;
+
         }
         .menu ul li{
             margin-left: 20px;
             color: aliceblue;
             font-size: 1.2rem;
         }
+
+        .linkMenu:link, 
+        .linkMenu:visited{
+            color: white;
+            text-decoration: none;
+            font-weight: 100;
+        }
+        .linkMenu:hover,
+        .linkMenu:active{
+            color: lightblue;
+        }
+
+        /* Primeira Dobra - #Home */
         .secApresentacao{
             background-image: url(https://scontent.fbnu7-1.fna.fbcdn.net/v/t39.30808-6/240233181_234514215343017_7848168994262859857_n.png?_nc_cat=109&ccb=1-7&_nc_sid=52f669&_nc_ohc=WfrPf690iSgAX9nPYyK&_nc_ht=scontent.fbnu7-1.fna&oh=00_AfBw2g1vrHvVvQIcUvBdTzgZJB3MBuQr0KZFSb099uiP1g&oe=64F4E16F);
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh;
+            height: 70vh;
+            display: flex;
+        }
+
+        /*classes de uso geral*/
+        .largura60{
+            width: 60%;
+        }
+        .verticalCentro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 
@@ -48,18 +98,26 @@
             <div class="menu">
                 <ul>
                     
-                    <li>Home</li>
-                    <li>Características</li>
-                    <li>Depoimentos</li>
-                    <li>Contato</li>
+                    <li><a class="linkMenu" href="#home"></a>Home</li>
+                    <li><a class="linkMenu" href="#caracteristicas"></a>Características</li>
+                    <li><a class="linkMenu" href="#depoimentos"></a>Depoimentos</li>
+                    <li><a class="linkMenu" href="contato"></a>Contato</li>
 
                 </ul>
             </div>
         </nav>
     </header>
     <main> <!-----------------Main----------------> 
-        <section class="secApresentacao">
+        <section id="home" class="secApresentacao">
+            <div>
+                <div class="largura60">
 
+                </div>
+                <div >
+                    <h1>títilo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolorem.</p>
+                </div>
+            </div>
         </section>
         <section class="secCaracteristicas">
             <h2>FAQ</h2>
