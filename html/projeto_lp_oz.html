@@ -14,6 +14,7 @@
         /*CSS Reset*/
         body{
             margin: 0px ;
+            background-color: aliceblue;
         }
         
         /*palheta de cores*/
@@ -21,7 +22,9 @@
             --CorPrincipal: #1729B3; 
             --CorSecundaria1: #3B52FF; 
             --CorSecundaria2: #071266;
-            
+            --CorComplementar1: #664F00;
+            --CorComplementar2: #B38F17;
+            --CorNeutra: #D0DCFB;
         }
         /*cabeçalho*/
         .navHeader{
@@ -29,8 +32,14 @@
             background-color: darkblue;
         }
 
+        .logo{
+            justify-content: center;
+            margin-left: 10px;
+            margin-top: 4px;
+        }
         .logo img{
             width: 75px;
+            
         }
 
         .menu{
@@ -75,14 +84,66 @@
             display: flex;
         }
 
+        /*   Depoimentos - #depoimentos */
+        .secDepoimentos{
+            
+            background-color: #1729B3;
+            color: white;
+        }
+        .divDepoimentos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 10px;
+        }
+        #h2Depoimentos{
+            margin-left: 10px;
+        }
+
+        /* footer - #contato*/
+
+        .ulContato{
+            display: flex;
+            list-style-type: none;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+
         /*classes de uso geral*/
         .largura60{
             width: 60%;
+            height: 100%;
+            margin-left: 10px;
+        }
+        .largura40{
+            width: 40%;
+            height: 100%;
         }
         .verticalCentro{
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        .divCaracteristicas{
+            display: flex;
+        }
+
+        .ulBeneficios{
+            display: flex;
+            list-style-type: none;
+            font-weight: 800;
+            width: 90%;
+            
+            justify-content: space-evenly;
+            margin-right: 40px;
+        }
+        .ulBeneficios img{
+            height: 100px;
+            justify-content: space-evenly;
         }
     </style>
 
@@ -101,7 +162,7 @@
                     <li><a class="linkMenu" href="#home"></a>Home</li>
                     <li><a class="linkMenu" href="#caracteristicas"></a>Características</li>
                     <li><a class="linkMenu" href="#depoimentos"></a>Depoimentos</li>
-                    <li><a class="linkMenu" href="contato"></a>Contato</li>
+                    <li><a class="linkMenu" href="#contato"></a>Contato</li>
 
                 </ul>
             </div>
@@ -113,22 +174,65 @@
                 <div class="largura60">
 
                 </div>
-                <div >
-                    <h1>títilo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolorem.</p>
+                <div class="largura40">
+                    
                 </div>
             </div>
         </section>
         <section class="secCaracteristicas">
-            <h2>FAQ</h2>
+            <div class="divCaracteristicas">
+                <div class="largura60">
+                    <h1>Oxisanitização para Ambientes</h1>
+                    <p>Traga higiene e segurança para sua família e seus clientes!</p>
+                </div>
+                <div class="largura40">
+                    
+                </div>
+            </div>
 
         </section>
-        <section class="secDepoimentos">
-
+        <section class="secBeneficios">
+                <ul class="ulBeneficios">
+                    <div>
+                        <img src="https://images.vexels.com/media/users/3/261498/isolated/preview/4d199666535dd6013cbf236f3d76d4bb-va-rus-verde.png" alt="virus">
+                        <li>Mata vírus e bactérias</li>    
+                    </div>
+                    <div>
+                        <img src="https://w7.pngwing.com/pngs/245/15/png-transparent-odor-olfaction-odor-text-hand-fictional-character.png" alt="odores">
+                        <li>Elimina odores</li> 
+                    </div>                            
+                    <div>
+                        <img src="https://conforlab.com.br/wp-content/uploads/2019/08/mofo.png" alt="mofo">
+                        <li>Reduz mofos</li> 
+                    </div>  
+                    <div>
+                        <img src="https://w1.pngwing.com/pngs/730/364/png-transparent-hair-sinus-infection-paranasal-sinuses-caccola-nose-nasal-congestion-nasal-cavity-empyema.png" alt="rinite">
+                        <li>Ameniza sintomas de rinite</li>
+                    </div>                                              
+                </ul>
+        </section>
+        <section class="secDepoimentos" #depoimentos>
+            <h2 id="h2Depoimentos">Depoimentos</h2>
+            <div class="divDepoimentos">
+                <div>
+                <p>"Me ajudou muito na minha rinite! Custo benefício excelente!"</p>
+                </div>
+                <div>
+                <p>"Depois que eu comprei meu filho pequeno melhorou muito de suas crises de rinite!"</p>
+                </div>
+                <div>
+                <p>"Uso em casa todos os dias, depois que se acostuma não da mais para viver sem, é uma sensação de limpeza!"</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer><!-----------------Footer----------------> 
-
+        <ul class="ulContato">
+            <li>Whatsapp:(47) 98856-9321</li>
+            <li>Telefone:(47) 3237-8487</li>
+            <li>Instagram:@jsozonio</li>
+            <li>Email: contato@jsozonio.com.br</li>
+        </ul>
     </footer>
 </body>
 

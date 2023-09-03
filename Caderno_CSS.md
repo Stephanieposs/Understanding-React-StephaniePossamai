@@ -102,32 +102,53 @@ Seleciona os elementos com base em uma relação específica entre eles
 #### Comandos que estilizam a página no CSS
 Comandos gerais: 
 - padding -> px -> 
+    padding-left, padding-right
+
 - margin -> px -> margem 
 - background-color -> cor do background do item selecionado
 - border ->
+    border-style, border-color, 
 
 - width e height -> 
 - display -> block (linha inteira), inline (****)
 - text-align: center -> alinha o texto de uma linha
-- flex-direction: -> column, column-reverse, row, row-reverse
+
 - justify-content -> flex-end, flex-start, center, space-between, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> alinhamento horizontal, se usa ao mesmo tempo que o display flex
-- align-items -> flex-end, flex-start, center, -> alinhamento vertical
-- align-content -> flex-end, flex-start, center, space-between, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> 
-- flex-wrap -> wrap, nowrap(escapa) -> quebra o conteudo, não deixa escapar  
+- align-items -> flex-end, flex-start, center, stretch, baseline -> alinhamento vertical sem wrap 
+- align-content -> flex-end, flex-start, center, space-between, stretch, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> alinhamento vertical com wrap 
+
+- flex-wrap -> wrap, nowrap(escapa), wrap-reverse -> quebra o conteudo e coloca em outra linha, não deixa escapar  
 - flex-flow -> flex-direcion + flex-wrap 
 - flex-grow
 - flex-shrink
-- flex-
+- flex-direction: row;  /*column; column-reverse; row; row-reverse;*/
+
+         
 
 Comandos de tabelas:  
 - vertical-align -> alinha o conteudo de um item da tabela centralizado, em cima ou embaixo
 - overflow-y -> configura o scroll da vertical, auto seria o ideal  
+- overflow-x -> configura o scroll da horizontal, auto seria o ideal  
 - empty-lines -> limpa o conteudo 
+- line-height 
+
+tr:nth-child(odd){ /*even, odd, 3n, 4, 2n + 1...*/
+            background-color: bisque;
+        }
+
 
 Comandos de lista: 
 - list-style-type -> muda o pontinho da frente da lista  
-- list-style-image -> coloca uma imagem no lugar dos pontinhos da frente  
-- list-style-position -> muda o local do pontinho ou imagem
+- list-style-image: url("assets/index.gif"); -> coloca uma imagem no lugar dos pontinhos da frente  
+- list-style-position -> inside, etc -> muda o local do pontinho ou imagem
+
+Comandos de Fonte: 
+- font-size -> px
+- font-style: italic;
+- font-variant: normal;
+- font-weight: 800 / lighter/ etc
+- font-size: 0.5em;
+- font-family: 'Courier New', Courier, 'lucida console', monospace;
 
 Comandos de imagem: 
 - opacity: 0.3; 
@@ -140,3 +161,4 @@ Comandos de imagem:
 - filter: sepia(0.5);
 - filter: drop-shadow(rgb);
 - filter: hue-rotate(120deg);
+
