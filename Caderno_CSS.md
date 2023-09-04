@@ -110,7 +110,7 @@ Comandos gerais:
 - padding -> px -> 
 - margin -> px -> margem
 - width e height 
-- display -> block (linha inteira), inline (****)
+- display -> block (quebra a linha, pega a altura do conteudo e a largura total), inline (pega a altura do elemento pai, não quebra a linha)
 - justify-content -> flex-end, flex-start, center, space-between, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> alinhamento horizontal, se usa ao mesmo tempo que o display flex
 - align-items -> flex-end, flex-start, center, stretch, baseline -> alinhamento vertical sem wrap 
 - align-content -> flex-end, flex-start, center, space-between, stretch, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> alinhamento vertical com wrap 

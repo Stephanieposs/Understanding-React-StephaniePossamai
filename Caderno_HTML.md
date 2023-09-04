@@ -11,7 +11,7 @@
 - [Inserindo links](#inserindo-links-no-html)
 - [Audio visual](#audio-visual-html)
 - [Emmet Abbreviations](#emmet-abbreviations)
-
+- [Formulários](#formulários)
 
 #### Formatação básica do html sem divisões 
 ```
@@ -440,3 +440,13 @@ exemplo:
 }
 ```
 
+#### Formulários
+
+- value -> texto que inicia na caxa de texto do formulário, valor que eu vou capturar
+- type do button -> button(botão, captura só com JS), reset (limpar) ou submit (pega os dados e envio)
+
+```
+{
+
+}
+```
