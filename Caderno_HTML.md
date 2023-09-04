@@ -443,7 +443,22 @@ exemplo:
 #### Formulários
 
 - value -> texto que inicia na caxa de texto do formulário, valor que eu vou capturar
-- type do button -> button(botão, captura só com JS), reset (limpar) ou submit (pega os dados e envio)
+- type do button ou input-> button(botão, captura só com JS), reset (limpar) ou submit (pega os dados e envio)
+- placeholder -> dica dentro da caixa que é pra escrever
+- quando tem o label não precisa placeholder 
+- colocar required -> item obrigatorio 
+- colocar uma tag com um display:block em cada label que ela quebra a linha
+- Types do input: 
+    - quando type for number -> step (0.01) de quanto em quando ele vai contar, min, max
+    - type range -> é uma barra pra arrastar o valor
+    - type password -> ele oculta a digitação e aceita qualquer coisa
+    - type email -> aceita qualquer coisa mas tem que ter formato de email, ve se tem o @
+    - type date ->  traz o calendario, min e max é a data americana (ao contrario)
+    - type datetime and datetime-local and time
+    - type color
+    - type radio -> bolinha pra selecionar e só pode selecionar um se eles estiverem com o mesmo name, se colocar um checked em um deles ja começa selecionado -> colcoar o label atras
+    - type checkbox ->  -> se coloca o label atras
+
 
 ```
 {
