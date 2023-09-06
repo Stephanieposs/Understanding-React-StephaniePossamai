@@ -441,12 +441,18 @@ exemplo:
 ```
 
 #### Formulários
-
+- colcoar nane e id bem descritivo
+- ```{<form>}``` -> mas também pode ser uma div por exemplo, só são reclama em alguns casos especificos
+- ```{<label for="">}``` -> colocar para 
+- ```{<label method="GET">}``` -> coloca os campos no link da pagina e limpa o formulario
+- ```{<label method="POST">}``` -> salva os campos e não tem limite
 - value -> texto que inicia na caxa de texto do formulário, valor que eu vou capturar
 - type do button ou input-> button(botão, captura só com JS), reset (limpar) ou submit (pega os dados e envio)
 - placeholder -> dica dentro da caixa que é pra escrever
 - quando tem o label não precisa placeholder 
 - colocar required -> item obrigatorio 
+- colocar autocomplete="off" -> não aparece as sugestões
+- colocar autofocus -> vai dando enter e vai para os campos, o campo com autofocus é oq vai começar
 - colocar uma tag com um display:block em cada label que ela quebra a linha
 - Types do input: 
     - quando type for number -> step (0.01) de quanto em quando ele vai contar, min, max
@@ -458,10 +464,13 @@ exemplo:
     - type color
     - type radio -> bolinha pra selecionar e só pode selecionar um se eles estiverem com o mesmo name, se colocar um checked em um deles ja começa selecionado -> colcoar o label atras
     - type checkbox ->  -> se coloca o label atras
-
-
-```
-{
-
-}
-```
+- caixa de seleção: 
+```{
+    <label>
+    <select name="" id="" size="3" multiple> <!--size é o tamanho da cixa que aparece e multiple pode selecionar mais de uma opção mas tem que segurar o control-->
+        <option value="">nome</option>
+        <option value="">nome1</option>
+        <optgroup> <!--cria grupos de seleção-->
+    </select>
+}```
+- ```{<fieldset>}``` -> cria uma caixa ao redor de tudo que estiver dentro, apenas por estetica, tambem da de fazer com uma div e estilizar
