@@ -335,6 +335,9 @@ Depois essa formatação é arrumada com o Css para ficar tudo no seu lugar
 **target** ->    
 blanc (abre o link em outra aba)   
 self (abre no mesmo navegador)  
+*****************************************************
+
+
 **title** -> texto que aoarece quando passa o mouse me cima do link    
 **download** -> baixar a foto do link
 

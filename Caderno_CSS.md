@@ -3,7 +3,19 @@
 ### Sumário
 - [Anotações gerais](#anotações-gerais-css)
 - [CSS Básico](#css-básico)
+- [Google Calendar](#google-calendar)
 - [Comandos para estilizar](#comandos-que-estilizam-a-página-no-css)
+    - [Background](#background)
+    - [Flex](#flex)
+    - [Texto](#texto)
+    - [Bordas](#bordas)
+    - [Tabela](#comandos-de-tabelas)
+    - [Lista](#comandos-de-lista)
+    - [Fonte](#comandos-de-fonte)
+    - [Imagem](#comandos-de-imagem)
+- [Estado de links](#comandos-para-estado-de-links-colocar-no-style)
+- [Criando Variáveis](#criando-variáveis)
+
 
 #### Anotações gerais CSS
 **Funções:**  Estilizar elementos HTML, controle de layout, animações e transições, pseudoclasses e pseudoelementos, estilos de formulários, transformações e efeitos 2D/3D, controle de impressão
@@ -40,6 +52,7 @@ landing page ->
 O CSS tem seletores que são colocados no style para encontrar os elementos para estilizar. Existem 5 tipos de seletores: simples, combinadores, de pseudoclasse, de pseudoelementos e de atributos.
 - [Seletores simples](#seletores-simples)  
 - [Seletores combinadores](#seletores-combinadores)
+
 
 
 ##### Seletores simples
@@ -115,7 +128,7 @@ Comandos gerais:
 - align-items -> flex-end, flex-start, center, stretch, baseline -> alinhamento vertical sem wrap 
 - align-content -> flex-end, flex-start, center, space-between, stretch, space-around, space-evenly (mesmo que o around mas deixa todos os espaçamentos iguais) -> alinhamento vertical com wrap 
 
-- Background
+##### Background 
     - background-color: beige;
     - background-image: url("assets/fundo.png");
     - background-repeat: no-repeat;
@@ -124,7 +137,8 @@ Comandos gerais:
     - background-size: 1000px;
     - opacity: 30%;
 
-- Flex -> quebra de conteúdo    
+#####  Flex 
+-> quebra de conteúdo    
     - flex-wrap -> wrap, nowrap(escapa), wrap-reverse -> quebra o conteudo e coloca em outra linha, não deixa escapar  
     - flex-flow -> flex-direcion + flex-wrap 
     - flex-grow
@@ -132,7 +146,7 @@ Comandos gerais:
     - flex-basis: 200px;
     - flex-direction: row;  /*column; column-reverse; row; row-reverse;*/
 
-- Texto
+##### Texto
     - text-align: justify; /*left, right, center, justify*/  -> alinha o texto de uma linha
     
     - text-decoration-line: overline line-through;
@@ -152,7 +166,7 @@ Comandos gerais:
     - word-spacing: 15px;
     - white-space: nowrap; /*impede quebra de linha forçando o scroll horizontal*/
 
-- Bordas
+##### Bordas
     - border-style: dashed;
     - border-color: blue;
     - border-width: 10px;
@@ -175,24 +189,28 @@ Comandos gerais:
 
     - border-radius: 50%;
 
-- Comandos de tabelas:  
+##### Comandos de tabelas:  
     - vertical-align -> alinha o conteudo de um item da tabela centralizado, em cima ou embaixo
     - overflow-y -> configura o scroll da vertical, auto seria o ideal  
     - overflow-x -> configura o scroll da horizontal, auto seria o ideal  
     - empty-lines -> limpa o conteudo 
     - line-height 
 
-tr:nth-child(odd){ /*even, odd, 3n, 4, 2n + 1...*/
-            background-color: bisque;
+        ```
+        {
+            tr:nth-child(odd){ /*even, odd, 3n, 4, 2n + 1...*/
+                background-color: bisque;
+            }
         }
+        ```
 
 
-- Comandos de lista: 
+##### Comandos de lista: 
     - list-style-type -> muda o pontinho da frente da lista  
     - list-style-image: url("assets/index.gif"); -> coloca uma imagem no lugar dos pontinhos da frente  
     - list-style-position -> inside, etc -> muda o local do pontinho ou imagem
 
-- Comandos de Fonte: 
+##### Comandos de Fonte: 
     - font-size -> px
     - font-style: italic;
     - font-variant: normal;
@@ -200,7 +218,7 @@ tr:nth-child(odd){ /*even, odd, 3n, 4, 2n + 1...*/
     - font-size: 0.5em;
     - font-family: 'Courier New', Courier, 'lucida console', monospace;
 
-- Comandos de imagem: 
+##### Comandos de imagem: 
     - opacity: 0.3; 
     - filter: blur(5px); -> borrado 
     - filter: brigthness (3); -> claridade da foto
@@ -212,14 +230,14 @@ tr:nth-child(odd){ /*even, odd, 3n, 4, 2n + 1...*/
     - filter: drop-shadow(rgb);
     - filter: hue-rotate(120deg);
 
-- Comandos para estado de links: (colocar no style)
+##### Comandos para estado de links: (colocar no style)
     - a:link -> link normal
     - a:visited -> links ja visitados
     - a:hover -> quando passar por cima do link
     - a:active -> quando clicar no link 
     - obs: normalmente se junta link e visited, e hover e active com as mesmas caracteristicas
 
-- Criando variáveis:
+##### Criando variáveis:
     ```
     {
     /* Palheta de Cores*/
@@ -242,3 +260,21 @@ tr:nth-child(odd){ /*even, odd, 3n, 4, 2n + 1...*/
         }
     }
     ```
+
+#### Cursor do Mouse
+mudar o cursor do mouse em áreas e/ou situações específicas do site
+A propriedade css é: 
+```
+{ 
+    cursor : tipo-cursor 
+} 
+```
+
+![Imagem cursores](<assets\cursoresMouse.jpg>)
+
+#### Tags editáveis 
+É como se transformássemos uma div ou um h1 num campo que permite digitação
+A principal finalidade da propriedade contenteditable é criar elementos que possam funcionar como campos de entrada de texto, mas que não estão restritos a elementos de formulário, como (input> ou *textarea>*). Isso permite que se crie interfaces de edição de texto personalizadas e flexíveis, como editores de texto enriquecido (editores que permitem formatação) em páginas da web.
+
+![Tags Editáveis](<assets\tagsEditaveis.png>)
+
