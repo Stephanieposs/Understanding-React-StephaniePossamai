@@ -270,7 +270,7 @@ A propriedade css é:
 } 
 ```
 
-![Imagem cursores](<assets\cursoresMouse.jpg>)
+![Imagem cursores](assets\cursoresMouse.jpg)
 
 #### Tags editáveis 
 É como se transformássemos uma div ou um h1 num campo que permite digitação
