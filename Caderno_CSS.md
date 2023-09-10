@@ -269,12 +269,12 @@ A propriedade css é:
     cursor : tipo-cursor 
 } 
 ```
+<img src="assets\cursoresMouse.jpg" alt="" width="100" title="Imagem cursores">
 
-![Imagem cursores](assets\cursoresMouse.jpg)
 
 #### Tags editáveis 
 É como se transformássemos uma div ou um h1 num campo que permite digitação
 A principal finalidade da propriedade contenteditable é criar elementos que possam funcionar como campos de entrada de texto, mas que não estão restritos a elementos de formulário, como (input> ou *textarea>*). Isso permite que se crie interfaces de edição de texto personalizadas e flexíveis, como editores de texto enriquecido (editores que permitem formatação) em páginas da web.
 
-![Tags Editáveis](<assets\tagsEditaveis.png>)
+<img src="assets\tagsEditaveis.png" alt="" width="100" title="Tags editáveis">
 
