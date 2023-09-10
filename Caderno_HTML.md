@@ -12,6 +12,7 @@
 - [Audio visual](#audio-visual-html)
 - [Emmet Abbreviations](#emmet-abbreviations)
 - [Formulários](#formulários)
+- [Input Mode](#input-mode)
 
 #### Formatação básica do html sem divisões 
 ```
@@ -450,7 +451,6 @@ exemplo:
 - ```{<label method="GET">}``` -> coloca os campos no link da pagina e limpa o formulario
 - ```{<label method="POST">}``` -> salva os campos e não tem limite
 - value -> texto que inicia na caxa de texto do formulário, valor que eu vou capturar
-- type do button ou input-> button(botão, captura só com JS), reset (limpar) ou submit (pega os dados e envio)
 - placeholder -> dica dentro da caixa que é pra escrever
 - quando tem o label não precisa placeholder 
 - colocar required -> item obrigatorio 
@@ -466,7 +466,14 @@ exemplo:
     - type datetime and datetime-local and time
     - type color
     - type radio -> bolinha pra selecionar e só pode selecionar um se eles estiverem com o mesmo name, se colocar um checked em um deles ja começa selecionado -> colcoar o label atras
-    - type checkbox ->  -> se coloca o label atras
+    - type checkbox -> se coloca o label atras
+
+- Campo de texto de multiplas linhas
+    ```
+    {
+        <textarea name="nmDesc" id="idDesc" cols="30" rows="10">innerText</textarea>
+    }
+    ```
 - caixa de seleção: 
 ```{
     <label>
@@ -475,5 +482,47 @@ exemplo:
         <option value="">nome1</option>
         <optgroup> <!--cria grupos de seleção-->
     </select>
+}
+```
+
+- cria uma caixa ao redor de tudo que estiver dentro, apenas por estetica, tambem da de fazer com uma div e estilizar -> 
+```{
+    <fieldset>
+}
+``` 
+
+- Lista de dados (seleção de item)
+```{
+    <label for="idBrowsers">Navegadores:</label><br>   
+    <input list="idBrowsers">
+    <datalist id="idBrowsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="chrome">Chrome</option>
+}
+```
+
+- Botão
+type do button ou input-> button(botão, captura só com JS), reset (limpar) ou submit (pega os dados e envio)
+```{
+    <button type="reset">Limpar</button>
+} 
+```
+- Padrões
+  - pattern="[A-Za-z]{3}"  -> sobrenome
+  - pattern="\(\d{2}\) \d{4}-\d{4}" -> telefone
+  - pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter pelo menos um número e uma letra maiúscula minúscula e pelo menos 8 ou mais caracteres" 
+  - readonly -> apenas ler 
+  - min="2022-04-01" max="2022-05-30"
+
+#### Input Mode
+
+It is an enumerated attribute that hints at the type of data that might be entered by the user while editing the element or its contents. This allows a browser to display an appropriate virtual keyboard.
+
+```
+{
+    <input type="number" placeholder="type=number">
+    <input type="number" inputmode="numeric"  placeholder="type=number inputmode=numeric">
+    <input type="text" inputmode="numeric"  placeholder="type=text inputmode=numeric">
 }```
-- ```{<fieldset>}``` -> cria uma caixa ao redor de tudo que estiver dentro, apenas por estetica, tambem da de fazer com uma div e estilizar
+
+

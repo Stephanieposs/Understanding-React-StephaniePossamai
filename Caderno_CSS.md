@@ -38,7 +38,12 @@ CSS estilo externo : <link rel="stylesheet" href="style.css">
 
 Aonde se coloca o CSS: Cascateamento: 
 - CSS Padrão Navegador
-- CSS Folhas de estilo interno e externo (interno é quando a gente abre o style com o *,#,etc e externo é um arquivo separado .css)
+- CSS Folhas de estilo interno e externo (interno é quando a gente abre o style com o *,#,etc e externo é um arquivo separado .css). Adicionando folhas de estilo no head: 
+```
+{
+    <link rel="stylesheet" href="normalize.css">
+}
+```
 - CSS Inline
 
 Sites cores:   
@@ -269,12 +274,12 @@ A propriedade css é:
     cursor : tipo-cursor 
 } 
 ```
-<img src="assets\cursoresMouse.jpg" alt="" width="100" title="Imagem cursores">
+<img src="assets\cursoresMouse.jpg" alt="" width="500" title="Imagem cursores">
 
 
 #### Tags editáveis 
 É como se transformássemos uma div ou um h1 num campo que permite digitação
 A principal finalidade da propriedade contenteditable é criar elementos que possam funcionar como campos de entrada de texto, mas que não estão restritos a elementos de formulário, como (input> ou *textarea>*). Isso permite que se crie interfaces de edição de texto personalizadas e flexíveis, como editores de texto enriquecido (editores que permitem formatação) em páginas da web.
 
-<img src="assets\tagsEditaveis.png" alt="" width="100" title="Tags editáveis">
+<img src="assets\tagsEditaveis.png" alt="" width="500" title="Tags editáveis">
 
