@@ -7,6 +7,7 @@
 - [Links:](#links)
 - [Cadernos dos Assuntos](#cadernos-dos-assuntos)
 
+
 ### Cadernos dos Assuntos
 [HTML](Caderno_HTML.md)  
 [CSS](Caderno_CSS.md)  
@@ -42,4 +43,5 @@ obs. o VS Code tem o terminal que pode ser usado como o cmd
 [Guide Markdown](https://www.markdownguide.org/cheat-sheet/)  
 [Visualização Markdown](https://readme.so/pt/editor)  
 [Tutorial HTML e outras linguagens](https://www.w3schools.com/html/default.asp)  
-[Sumário HTML](https://alexandrealvaro.com.br/indice-markdown/)
+[Sumário HTML](https://alexandrealvaro.com.br/indice-markdown/)  
+[Formatações no GitHub](https://docs.github.com/pt/get-started/writing-on-github)

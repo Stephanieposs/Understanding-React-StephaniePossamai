@@ -8,18 +8,31 @@ Sumário
 
 
 ### Lógica Programação
-Gerações de um software 
-![Gerações das Linguagens](assets/logica/geraçoes das linguagens.png)
 
-Binario
+#### Gerações das Linguagens
+<img src="assets/logica/geracoesDasLinguagens.png" alt="" width="500" title="Gerações das Linguagens">
 
-linguagens de baixo e alto nivel
+#### Binário
+<img src="assets/logica/binario.png" width="500" title="Números Binários">
 
-o que é software
 
-linguagem compilada x interpretada
+#### Linguagem Compilada x Interpretada
+- Um compilador transforma o código para binário e depois envia para a máquina executar
+- No interpretador os trechos de código são traduzidos conforme são enviados para o computador executar  
 
-computador por dentro
+Características de cada um:  
+
+|         Compilador         |    Interpretador     |
+|        -------------       |    -------------     |
+| Execução mais rápida       | Utiliza menos memória|
+| Estruturas mais completas  | Resultado imediato   |
+
+
+<img src="https://lh6.googleusercontent.com/4BZY83ynx1aZpVKdsnV64hBwbExRfNYnc-tOIucGBKONIROGVSNkJSDPPpjVbNJHNiYL2JTqmvrL5_h3_hMJ2u61lk8Jiw50_LWCX_P35kV6BDFv2AzRt3hAjk0bWusynVx94IUl" width="500" title="Compilador x Interpretador">
+ 
+#### Hardware 
+<img src="assets/logica/componentesHardware.png" alt="" width="500" title="Componentes do Computador">
+<img src="assets/logica/arquiteturaVonNeuman.png" alt="" width="500" title="Arquitetura Von Neuman">
 
 
 ### Anotações Gerais JS
@@ -53,7 +66,7 @@ variaveis que estão dentro da função não conseguem ser chamadas fora
 - Como jogar uma função para a tela:
 ```
 {
-    document.getElementById(idNome)
+    document.getElementById(idNome).value 
 }
 ```
 
