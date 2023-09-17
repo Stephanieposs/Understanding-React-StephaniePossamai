@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action=""> 
+        <input type="button" value="Testar" onclick="testar()"> <!--pega um função-->
+            <!--fora do form tem que ser um button para funcionar como desejado-->
+    </form>
+    <script>
+
+        var tosse = document.getElementById("idTosse").value; //pega o valor do id 
+
+        function testar(){ // função
+            if((tosse == "V" && dorGarganta== "V")||(febre>= 38 && faltaAr== "V")){
+                console.log("Procure um médico");
+            }else{
+                console.log("Fique em casa"); // "imprime" no inspecionar>console
+            }
+        }
+
+    </script>
+
+</body>
+</html>

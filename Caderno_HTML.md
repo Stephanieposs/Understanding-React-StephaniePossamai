@@ -75,6 +75,7 @@
 ```
 
 
+
 #### Listas html
 ul -> unordered list
 ol -> ordered list
@@ -523,6 +524,9 @@ It is an enumerated attribute that hints at the type of data that might be enter
     <input type="number" placeholder="type=number">
     <input type="number" inputmode="numeric"  placeholder="type=number inputmode=numeric">
     <input type="text" inputmode="numeric"  placeholder="type=text inputmode=numeric">
-}```
+}
+```
 
-
+#### Links
+- [Primeiro Formulário](https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Your_first_form)
+- [Estruturação de Formulários](https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form)
