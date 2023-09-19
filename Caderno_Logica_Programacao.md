@@ -5,7 +5,8 @@ Sumário
 - [Introdução JS](#introdução-javascript)
 - [Tipos de Dados](#tipos-de-dados)
 - [Operações Aritméticas](#operações-aritmeticas)
-
+- [Conversões dos tipos de dados](#conversões-tipos-de-dados)
+- [Detalhes no JS](#detalhes-dentro-das-estruturas-de-seleção)
 
 ### Lógica Programação
 
@@ -36,9 +37,9 @@ Características de cada um:
 
 
 ### Anotações Gerais JS
-Não precisa ;
-É colocado dentro de um bloco script dentro do body do html
-
+Não precisa ;  
+É colocado dentro de um bloco script dentro do body do html  
+O if é igual no Java  
 
 ### Introdução JavaScript
 
@@ -62,6 +63,19 @@ variaveis que estão dentro da função não conseguem ser chamadas fora
     <input type="button" value="Testar" onclick="testar()">
 }
 ```
+também da para colocar .innerText -> tambem funciona  
+é possivel atribuir texto para qualquer estrutura pelo id, como um paragrafo, h2, etc
+exemplo: 
+```
+{
+    document.getElementById("idOut").value = "Teste"
+
+    document.getElementById("idOut").innerText = "Teste 1234..."
+
+    document.getElementById("idParagrafo").innerText = "Atribuindo texto ao paragrafo"
+}
+```
+
 
 - Como jogar uma função para a tela:
 ```
@@ -69,6 +83,9 @@ variaveis que estão dentro da função não conseguem ser chamadas fora
     document.getElementById(idNome).value 
 }
 ```
+
+
+
 
 ### Tipos de Dados
 - Tipos de dados:
@@ -96,10 +113,101 @@ variaveis que estão dentro da função não conseguem ser chamadas fora
     console.log(isNan(nomeUsuario)); -> returna false se não for um numero 
     ** metodos com is normalmente retornam true ou false
 
-### Operações Aritmeticas
+#### Operações Aritmeticas
 
 - Potenciação -> **  
 - Resto da divisão -> %   
 - Radiciação -> num1**(1/num2) -> raiz de num1 por num2  
 - Porcentagem -> x=(valor * porcentagem)/100
 
+Em JavaScript também existe a biblioteca Math, alguns exemplos: 
+```
+{
+    //Biblioteca Math
+        var pi = Math.PI; 
+        console.log("PI " + pi);
+
+        resultado = Math.pow(5, 6); 
+        console.log("Math.pow " + resultado);
+
+        resultado = Math.sqrt(25); 
+        console.log("Math.sqrt " + resultado); 
+
+        resultado = Math.cbrt(27);
+        console.log("Math.cbrt " + resultado);
+
+        //Gerando números Pseudo-Aleatórios entre 0 e 10 
+        var numRand = parseInt(Math.random() * 10);
+        console.log("Num Randomico " + numRand);
+}
+```
+
+#### Conversões tipos de dados
+
+##### Conversões automáticas
+```
+{
+    console.log(5 + "2"); //Conversão para string
+    console.log(5 + null); //Conversão para number
+    console.log("5" + undefined); //Conversão para string
+    console.log("5" + null); //Conversão para string
+    console.log("5" - 2); //Conversão para number
+    console.log("5" * "2"); //Conversão para number
+}
+```
+##### Conversões explícitas para String
+```
+{
+    var variavel
+    var x = 345
+
+    variavel = String(x)
+
+    variavel = String(123)
+
+    salBase = salBase.toString(); 
+
+    //Outros métodos que retornam strings 
+    var h = 75.345675467;
+    console.log("h.tofixed(2) " + h.toFixed(2));
+    console.log("h.toExponencial(3) " + h.toExponential(3));
+    console.log("h.toPrecision(5) " + h.toPrecision(5));
+}
+```
+##### Conversões explícitas para Number
+```
+{
+    var y = "5"
+    var j = + y 
+    
+
+    console.log("'3.14' to Number " + Number("3.14"))
+    console.log("true to Number " + Number(true))
+    console.log("false to Number " + Number(false))
+    console.log("'89 90' to Number " + Number("89 90")) //retorna NaN
+    console.log("espaço to Number " + Number(" "))
+    console.log("vazio to number " + Number(""))
+
+
+    console.log("parseFloat('10.5') " + parseFloat("10.5"));
+    console.log("parseFloat('10') " + parseFloat("10"));
+
+    console.log("parseInt('10.5') " + parseInt("10.5"));
+    console.log("parseInt('10') " + parseInt("10"));
+}
+```
+
+#### Detalhes dentro das estruturas de seleção
+- Retorna true ou false se estiver selecionado -> .checked :
+```
+{
+    let masculino = document.getElementById("idMasc").checked
+    let feminino = document.getElementById("idFem").checked
+}
+```
+- Arredonda para o número de casas depois da virgula desejado -> .toFixed(n) :
+```
+{
+    document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
+}
+```
