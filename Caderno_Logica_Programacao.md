@@ -64,15 +64,18 @@ variaveis que estão dentro da função não conseguem ser chamadas fora
 }
 ```
 também da para colocar .innerText -> tambem funciona  
-é possivel atribuir texto para qualquer estrutura pelo id, como um paragrafo, h2, etc
+- pegar os elementos
 exemplo: 
 ```
 {
+    // atribuir texto para qualquer estrutura pelo id
+
     document.getElementById("idOut").value = "Teste"
 
     document.getElementById("idOut").innerText = "Teste 1234..."
 
     document.getElementById("idParagrafo").innerText = "Atribuindo texto ao paragrafo"
+
 }
 ```
 
@@ -80,7 +83,23 @@ exemplo:
 - Como jogar uma função para a tela:
 ```
 {
+    // com id
     document.getElementById(idNome).value 
+    
+    // ou com querySelector
+
+    texto2 = document.querySelector("#idTexto").value 
+    texto3 = document.querySelectorAll(".inputTexto")
+
+    // ver se o item ta selcionado
+    //Exemplo 007 - Select
+        itemSelected = document.getElementById("idSelect")
+        uf = itemSelected.value
+        console.log("UF: " + uf);
+
+    //Pegando o innerText do Elemento(Option) selecionado
+        console.log("Estado: " + itemSelected.options[itemSelectedselectedIndex].innerText);
+
 }
 ```
 
@@ -197,6 +216,34 @@ Em JavaScript também existe a biblioteca Math, alguns exemplos:
 }
 ```
 
+##### Conversão para boolean
+```
+{
+    // typeof()
+
+    var teste = 1
+    if (teste == true) 
+    {
+        console.log(typeof(teste));
+        console.log("Entrou True");
+    } else {
+        console.log("Entrou false");
+    }
+
+    // .checked resulta em boolean 
+    isOp1 = document.getElementById("idOpcao1").checked
+    // ou colocar o is
+    if (isOp1) 
+        {
+            console.log("Entrou no if");
+        }
+
+    
+}
+```
+
+
+
 #### Detalhes dentro das estruturas de seleção
 - Retorna true ou false se estiver selecionado -> .checked :
 ```
@@ -209,5 +256,25 @@ Em JavaScript também existe a biblioteca Math, alguns exemplos:
 ```
 {
     document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
+}
+```
+
+
+- /n -> pula linha
+```
+{
+    // saida 
+    out.innerText = "salarioBrutoBruto: " + salarioBruto.toFixed(2) + "\n Salário Líquido: " + salarioLiquido.toFixed(2) + "\n Descontos: " + descontoInss.toFixed(2)
+}
+```
+
+- ternário 
+```
+{
+    
+    var opcao = (menu == 0)? "ternario falso" : "ternario falso"
+    console.log(opcao);
+
+    // é a mesma coisa que um if 
 }
 ```
