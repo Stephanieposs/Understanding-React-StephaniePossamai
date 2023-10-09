@@ -3,10 +3,15 @@ Sumário
 - [Lógica de Programação](#lógica-programação)
 - [Anotações Gerais JS](#anotações-gerais)
 - [Introdução JS](#introdução-javascript)
+- [Utilizando Elementos](#pegando-elementos-e-jogando-pra-tela)
 - [Tipos de Dados](#tipos-de-dados)
 - [Operações Aritméticas](#operações-aritmeticas)
 - [Conversões dos tipos de dados](#conversões-tipos-de-dados)
 - [Detalhes no JS](#detalhes-dentro-das-estruturas-de-seleção)
+- [Estruturas de repetição](#estruturas-de-repetição)
+- [Funções](#funções)
+- [Bloquear itens da tela](#bloquear-itens-da-tela)
+- [Eventos](#tratamento-de-eventos)
 
 ### Lógica Programação
 
@@ -57,13 +62,18 @@ function pegarNome(){}
 usar o let quando for uma variável dentro da função
 variaveis que estão dentro da função não conseguem ser chamadas fora
 
+- Infinity 
+ -infinity -> menor valor possivel
+ +infinity -> maior valor possivel
+
+#### Pegando elementos e jogando pra tela
 - Como pegar uma função no html:
 ```
 {
     <input type="button" value="Testar" onclick="testar()">
 }
 ```
-também da para colocar .innerText -> tambem funciona  
+
 - pegar os elementos
 exemplo: 
 ```
@@ -76,6 +86,25 @@ exemplo:
 
     document.getElementById("idParagrafo").innerText = "Atribuindo texto ao paragrafo"
 
+    // pegar e usar radio buttons
+    let sexo = document.querySelector("input[name=nmSexo]:checked").value 
+    if(sexo=="F"){
+        valorComDesconto = valor*0.87
+    }
+
+    let opcoes = document.querySelectorAll("input[name=nmQuestao1]")
+    for (let index = 0; index < opcoes.length; index++) {
+        //const element = opcoes[index];
+        console.log(opcoes[index].id + " " + opcoes[index].checked);
+    }
+
+    for (let index = 0; index < opcoes.length; index++) {
+        respostas.push(opcoes[index].checked);
+    }
+
+    if (gabaritoQ1.toString() == respostas.toString()) {
+        console.log("Acertou!!!");
+    }
 }
 ```
 
@@ -276,5 +305,171 @@ Em JavaScript também existe a biblioteca Math, alguns exemplos:
     console.log(opcao);
 
     // é a mesma coisa que um if 
+}
+```
+
+
+#### Estruturas de repetição
+
+cada vez que passa numa estrutura de repetição é uma iteração, cada passada dentro do for por exemplo
+
+##### Array
+Vetores e matrizes são iguais em JS e é chamado de Array
+```
+{
+    // criando vetores
+    var fruta = ['laranja', 'morango', 10, true]
+    var frutaCitrica = fruta[0]
+
+    console.log(fruta) // imprime todo o vetor fruta
+
+    //Inserindo um novo elemento no final do array
+        fruta[fruta.length] = "melão"
+        fruta.push("Amora")
+
+
+        //Inserindo um novo elemento no inicio do array
+        fruta.unshift("Banana")
+        
+        //Tirar Elementos do começo do array 
+        var fruta3 = fruta.shift()
+        console.log("fruta 3 --> " + fruta3);
+
+
+        //Tirar Elementos do Final do array 
+        var fruta4 = fruta.pop()
+        console.log("fruta 4 --> " + fruta4);
+
+    //Iterando um Array 
+        for (let index = 0; index < fruta.length; index++) {
+            let element = fruta[index];
+            console.log(fruta[index]);
+            console.log("Fruta[" + index + "] -> " + element);
+        }
+
+    
+    // ordenando para crescente
+        for (let index = 0; index < 4; index++) {
+            if (funcao[index] < funcao[index - 1]) {
+                bolha = funcao[index];
+                funcao[index] = funcao[index - 1];
+                funcao[index - 1] = bolha;
+                bolha = 0;
+                index = 0;
+            }
+        }
+
+        // fazendo vetor decrescente
+        let contInv = 3;
+        for (let cont = 0; cont < 4; cont++) {
+            decrescente[contInv] = funcao[cont]
+            contInv--
+        }
+}
+```
+
+Objetos são por referencia, diferente dos tipos primitivos (String, boolean, int)
+
+console.table -> mostra os dados no console dentro de uma tabela -> usado para ver array
+
+```
+{
+    // decremento pós fixado 
+    numero[index] = num--  
+       // -> mesma coisa
+    numero[index] = num 
+    num -- 
+
+    // decremento pré fixado 
+    numero[index] = --num  
+       // -> mesma coisa
+    num --
+    numero[index] = num 
+}
+```
+
+
+=== -> compara o valor e o tipo
+
+#### Funções
+
+Funções são executadas quando forem chamadas ou a partir de um evento (exemplo, quando clicamos em um botão) -> Paradigma Programação estruturada
+```
+{
+    // função executada quando for chamada
+    var pesoIdealF = calcularPesoIdeal("f", 1.60)
+
+    function calcularPesoIdeal(genero, altura) { // genero e altura não precisam ser declarados antes
+
+            let pesoIdeal = 0
+            if (genero == "f") {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+    }
+
+
+}
+```
+
+#### Bloquear itens da tela
+disabled e hidden
+```
+{
+    // disabled -> não da pra mexer
+    <output id="idOutputMensagemEntrada2" disabled></output><br>
+
+    document.getElementById("idEntrada2").disabled = true;
+    document.getElementById("idEntrada2").disabled = false
+
+    // hidden -> item some
+    <div id="idCadastroNotas" hidden>
+
+    document.getElementById("idCadastroAlunos").hidden = true
+}
+```
+
+#### Tratamento de eventos
+```
+{
+    // tirar o onclick do button
+
+    //Event Handler Nível 1 
+    var botao = document.getElementById("idBotao2")
+
+    botao.onclick = tratamentoBotao2
+    function tratamentoBotao2() {
+        console.log("Clicou Botão 2");  
+    }
+
+    //usando função anonima
+    botao.onclick = function() {
+        console.log("Clique duplo em Botao 2");
+    }
+    // ondblclick - > double click
+    // onmouseover -> passar o mouse por cima
+
+
+    //Event Handler Nível 2 -> addEventListener
+    botao3.addEventListener("click", tratamentoBota3) //função de callback 
+    function tratamentoBota3() {
+        console.log("Clicou Botão 3");  
+    }
+
+    botao3.addEventListener("mouseover", function(){ // função anonima
+        console.log("Clique duplo no botao 3");
+    })
+
+    // button é submit
+
+    const botao4 = document.getElementById("idBotao4")
+    botao4.addEventListener("click", function(event)){
+        event.preventDefault() //previne o comportamento padrao do formulario 
+        console.log(event);
+    }
+
 }
 ```
