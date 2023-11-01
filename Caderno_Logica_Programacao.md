@@ -9,9 +9,9 @@ Sumário
 - [Conversões dos tipos de dados](#conversões-tipos-de-dados)
 - [Detalhes no JS](#detalhes-dentro-das-estruturas-de-seleção)
 - [Estruturas de repetição](#estruturas-de-repetição)
-- [Funções](#funções)
 - [Bloquear itens da tela](#bloquear-itens-da-tela)
 - [Eventos](#tratamento-de-eventos)
+- [Array, Funções e Matriz](Caderno_Logica_Funcoes_Arrays.md)
 
 ### Lógica Programação
 
@@ -45,6 +45,7 @@ Características de cada um:
 Não precisa ;  
 É colocado dentro de um bloco script dentro do body do html  
 O if é igual no Java  
+Js tem 3 escopos: Global, funcional(dentro de uma função) e local/bloco. 
 
 ### Introdução JavaScript
 
@@ -52,10 +53,15 @@ O if é igual no Java
 - Ver a execução no inspecionar>console
 
 - Declarando variáveis:
-var x let -> a diferença ele vai explicar depois 
-let -> preferir usar dentro de uma função 
-const -> é uma contante que tem que ser inicializada com algum valor e o valor não pode ser alterado depois.  
-ou sem dizer o que é, sem colocar var,let ou const -> prefira não usar
+  4 formas de declarar: var, let, const e "sem palavra reservada"
+
+"sem palavra reservada" -> escopo global, não é recomendada
+
+var -> variavel global e funcional, posso redeclarar a variável sem dar erro ```{var nome = "Joao"  var nome = "Igor"}``` (isso é ruim), ocorre hoisting: a variavel é declarada no começo do escopo 
+
+let -> variavel de bloco {}, não pode ser redeclarada
+
+const -> não pode ser reatribuida, mesmas regras do let, é uma contante que tem que ser inicializada com algum valor e o valor não pode ser alterado depois.  
 
 - Funções:
 function pegarNome(){}
@@ -309,112 +315,6 @@ Em JavaScript também existe a biblioteca Math, alguns exemplos:
 ```
 
 
-#### Estruturas de repetição
-
-cada vez que passa numa estrutura de repetição é uma iteração, cada passada dentro do for por exemplo
-
-##### Array
-Vetores e matrizes são iguais em JS e é chamado de Array
-```
-{
-    // criando vetores
-    var fruta = ['laranja', 'morango', 10, true]
-    var frutaCitrica = fruta[0]
-
-    console.log(fruta) // imprime todo o vetor fruta
-
-    //Inserindo um novo elemento no final do array
-        fruta[fruta.length] = "melão"
-        fruta.push("Amora")
-
-
-        //Inserindo um novo elemento no inicio do array
-        fruta.unshift("Banana")
-        
-        //Tirar Elementos do começo do array 
-        var fruta3 = fruta.shift()
-        console.log("fruta 3 --> " + fruta3);
-
-
-        //Tirar Elementos do Final do array 
-        var fruta4 = fruta.pop()
-        console.log("fruta 4 --> " + fruta4);
-
-    //Iterando um Array 
-        for (let index = 0; index < fruta.length; index++) {
-            let element = fruta[index];
-            console.log(fruta[index]);
-            console.log("Fruta[" + index + "] -> " + element);
-        }
-
-    
-    // ordenando para crescente
-        for (let index = 0; index < 4; index++) {
-            if (funcao[index] < funcao[index - 1]) {
-                bolha = funcao[index];
-                funcao[index] = funcao[index - 1];
-                funcao[index - 1] = bolha;
-                bolha = 0;
-                index = 0;
-            }
-        }
-
-        // fazendo vetor decrescente
-        let contInv = 3;
-        for (let cont = 0; cont < 4; cont++) {
-            decrescente[contInv] = funcao[cont]
-            contInv--
-        }
-}
-```
-
-Objetos são por referencia, diferente dos tipos primitivos (String, boolean, int)
-
-console.table -> mostra os dados no console dentro de uma tabela -> usado para ver array
-
-```
-{
-    // decremento pós fixado 
-    numero[index] = num--  
-       // -> mesma coisa
-    numero[index] = num 
-    num -- 
-
-    // decremento pré fixado 
-    numero[index] = --num  
-       // -> mesma coisa
-    num --
-    numero[index] = num 
-}
-```
-
-
-=== -> compara o valor e o tipo
-
-#### Funções
-
-Funções são executadas quando forem chamadas ou a partir de um evento (exemplo, quando clicamos em um botão) -> Paradigma Programação estruturada
-```
-{
-    // função executada quando for chamada
-    var pesoIdealF = calcularPesoIdeal("f", 1.60)
-
-    function calcularPesoIdeal(genero, altura) { // genero e altura não precisam ser declarados antes
-
-            let pesoIdeal = 0
-            if (genero == "f") {
-                pesoIdeal = (62.1 * altura) - 44.7
-            } else {
-                pesoIdeal = (72.7 * altura) - 58
-            }
-
-            return pesoIdeal
-    }
-
-
-}
-```
-
 #### Bloquear itens da tela
 disabled e hidden
 ```
@@ -473,3 +373,57 @@ disabled e hidden
 
 }
 ```
+
+#### String 
+
+```
+{
+    // tranformar em minusculo e maiusculo
+    const letra = "a" 
+    letra.toLowerCase();
+    letra.toUpperCase();
+}
+```
+
+tamplate string -> outra forma de escrever string com valores
+```
+{
+    console.log(`o total da conta é: ${total} , com descontro fica ${totalComDesconto}`);
+}
+```
+
+file path
+colocar \\ ao inves de \ para ele não apagar a barra -> vai aparecer só uma barra
+
+
+trim, pad  - w3schools
+
+
+### Css com JS
+
+sem o remove -> a cor não volta
+
+:root -> é para definir as variaveis
+
+em -> unidade relativa ao elemnto pai
+rem -> unidade relativa a tela
+
+##### Palavras para usar no script externo:
+- async -> carrega o js e html junto, processa o js e depois acaba o html -> usar quando não precisa alterar o dom e com logica grande
+- defer -> carrega o js com o html, mas executa o js apenas no final de tudo
+como usar -> 
+```
+{
+    <script src="script.js" defer></script>
+}
+```
+
+
+### Bootstrap 
+
+pra fazer o grid precisa do container my-5 e do col e row, ou seja, precisa de toda a estrutura para dividi certo
+grid sempre tem 12 breackpoints
+
+
+
+
